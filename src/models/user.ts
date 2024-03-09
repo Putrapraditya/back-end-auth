@@ -6,6 +6,7 @@ export interface UserDocument extends Document {
   password: string;
   googleId?: string;
   roles: string[];
+  verified: boolean; // New field for verification status
   createdAt: Date;
   updatedAt: Date;
   description?: string;
@@ -17,6 +18,7 @@ const userSchema: Schema = new Schema({
   password: { type: String, required: true },
   googleId: String,
   roles: [{ type: Schema.Types.ObjectId, ref: 'Role' }],
+  verified: { type: Boolean, default: false }, // Default to unverified
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now },
   description: String,
