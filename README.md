@@ -9,7 +9,7 @@ Silakan gunakan API ini sesuai dengan kebutuhan Anda.
 dan untuk database sudah berada pada model tidak perlu membuat database secara manual.
 
 ### struktur directory
-
+```sh
  project-directory
     │
     ├── node_modules
@@ -43,9 +43,9 @@ dan untuk database sudah berada pada model tidak perlu membuat database secara m
     ├── package.json
     ├── readme.md
     └── tsconfig.json
-
+```
 ### Endpoints
-
+```sh
 - **POST /api/auth/v1/register**: Mendaftarkan pengguna baru.
 - **POST /api/auth/v1/login**: Masuk dengan username dan password.
 - **POST /api/auth/v1/oauth**: Masuk dengan akun Google.
@@ -53,9 +53,9 @@ dan untuk database sudah berada pada model tidak perlu membuat database secara m
 - **POST /api/auth/v1/regenerate-otp**: mengirin ulang OTP.
 - **GET /api/auth/v1/refresh**: Memperbarui token akses.
 - **GET /api/auth/v1/logout**: Keluar dari sistem.
-
+```
 ### Format Json
-
+```sh
 1. **Register**
    {
    "email": "example@gmail.com",
@@ -79,3 +79,4 @@ dan untuk database sudah berada pada model tidak perlu membuat database secara m
    {
    "email": "example@gmail.com"
    }
+```
