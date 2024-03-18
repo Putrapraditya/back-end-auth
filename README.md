@@ -1,12 +1,16 @@
 ## Menjalankan Aplikasi
 
 1. Pastikan MongoDB sudah berjalan di komputer Anda.
-2. Buka terminal, arahkan ke direktori repositori, dan jalankan perintah `npm run dev` untuk menjalankan server.
+3. Buka terminal, arahkan ke direktori repositori, dan jalankan perintah `npm install` dan jalankan  `npm run dev` untuk menjalankan server.
 
 Server akan berjalan di http://localhost:3000 secara default.
 
 Silakan gunakan API ini sesuai dengan kebutuhan Anda.
 dan untuk database sudah berada pada model tidak perlu membuat database secara manual.
+```sh
+mongoDb 7.0.5
+node.js 20.11.1
+```
 
 ### struktur directory
 ```sh
